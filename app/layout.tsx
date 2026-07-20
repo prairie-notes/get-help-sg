@@ -13,11 +13,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://get-help-sg.qzhum1996.chatgpt.site"),
   title: "get help / sg — Find mental health support",
-  description: "A gentler way to find mental health resources in Singapore.",
+  description: "A private, guided way to find mental-health support and clinics in Singapore. No account and no diagnosis.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
+  },
+  openGraph: {
+    title: "Get Help SG — Small steps. Right support.",
+    description: "Find a practical next step and compare Singapore mental-health resources and clinics.",
+    type: "website",
+    locale: "en_SG",
+    url: "/",
+    images: [{ url: "/og.png", width: 1536, height: 899, alt: "Get Help SG — Small steps. Right support." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Get Help SG — Small steps. Right support.",
+    description: "Find a practical next step and compare Singapore mental-health resources and clinics.",
+    images: ["/og.png"],
   },
 };
 
