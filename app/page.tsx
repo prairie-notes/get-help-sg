@@ -93,6 +93,10 @@ const regions: Array<[Region, string, string]> = [
   ["central", "Central Singapore", "Orchard · Bukit Timah · Novena · City"],
 ];
 
+const regionOptions: Array<[Region, string, string]> = regions.map(([region, title, description]) =>
+  region === "south" ? [region, title, "Currently no clinics available"] : [region, title, description],
+) as Array<[Region, string, string]>;
+
 const providers: Provider[] = [
   {
     name: "Dr Munidasa Winslow",
@@ -2419,7 +2423,7 @@ export function LegacyHome() {
                 </p>
                 {!providerRegion ? (
                   <div className="region-options">
-                    {regions.map(([region, title, description], index) => (
+                    {regionOptions.map(([region, title, description], index) => (
                       <button className="region-card" type="button" key={region} onClick={() => chooseProviderRegion(region)}>
                         <span className="option-number">0{index + 1}</span>
                         <span className="option-copy"><strong>{title}</strong><small>{description}</small></span>
@@ -2599,7 +2603,7 @@ export default function Home() {
       resources={resources}
       helplines={singaporeHelplines}
       helplineDescriptions={helplineDescriptions}
-      regions={regions}
+      regions={regionOptions}
       regionLabels={regionLabels}
       getClinicDetails={clinicDetails}
       getLocationGroup={providerLocationGroup}

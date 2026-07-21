@@ -65,6 +65,7 @@ test("contains the guided flow, safety controls, clinic tools and no starter-onl
   assert.doesNotMatch(page, /address: "Frontier (?:Medical Associates, Yishun|Family Medicine Clinic, Clementi)"/);
   assert.match(page, /\["central", "Central Singapore", "Orchard · Bukit Timah · Novena · City"\]/);
   assert.match(page, /return "Bukit Timah"/);
+  assert.match(page, /Currently no clinics available/);
   assert.doesNotMatch(page, /region: "west",[\s\S]{0,240}address: "[^"]*(?:Bukit Timah|Fifth Avenue|Lorong Kilat|Cluny Court)/i);
   assert.match(page, /tel:995/);
   assert.match(page, /tel:999/);
