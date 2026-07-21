@@ -62,6 +62,7 @@ test("contains the guided flow, safety controls, clinic tools and no starter-onl
   assert.match(page, /Centropod@Changi, 80 Changi Road, #02-07, Singapore 419715/);
   assert.doesNotMatch(page, /address: "Eunos \/ East Singapore"/);
   assert.doesNotMatch(page, /practice: "Intellect Company Pte Ltd"/);
+  assert.doesNotMatch(page, /practice: "Mental Connect directory listing"/);
   assert.match(page, /Blk 654, Yishun Avenue 4, #01-437, Singapore 760654/);
   assert.match(page, /3151 Commonwealth Avenue West, #04-01 Grantral Mall, Singapore 129581/);
   assert.doesNotMatch(page, /address: "Frontier (?:Medical Associates, Yishun|Family Medicine Clinic, Clementi)"/);

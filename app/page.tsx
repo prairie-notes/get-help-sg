@@ -728,17 +728,6 @@ const providers: Provider[] = [
     source: "Practice location page",
   },
   {
-    name: "M Psychology Clinical",
-    kind: "therapist",
-    region: "east",
-    role: "Clinical psychology practice",
-    practice: "Mental Connect directory listing",
-    address: "411 Bedok North Avenue 2, #01-106, Singapore 460411",
-    description: "Clinical psychology and counselling support in Bedok.",
-    href: "https://mentalconnect.org/",
-    source: "Mental Connect directory listing",
-  },
-  {
     name: "Hope For Tomorrow Psychology Centre",
     kind: "therapist",
     region: "central",
@@ -749,17 +738,6 @@ const providers: Provider[] = [
     description: "Psychology and counselling support in the Bukit Timah area.",
     href: "https://hope4tmr.com/",
     source: "NCSS counselling services listing",
-  },
-  {
-    name: "M Psychology Clinical",
-    kind: "therapist",
-    region: "west",
-    role: "Clinical psychology practice",
-    practice: "Mental Connect directory listing",
-    address: "Bukit Batok West Avenue 8, Singapore 650168",
-    description: "Clinical psychology and counselling support in the West.",
-    href: "https://mentalconnect.org/",
-    source: "Mental Connect directory listing",
   },
   {
     name: "Dr Wong Mei Yin",
@@ -1384,20 +1362,10 @@ const clinicDetails = (provider: Provider): Pick<Clinic, "fees" | "booking" | "h
       booking: "Use the LightingWay location page to enquire or book.",
       hours: "By appointment; confirm available hours when booking.",
     },
-    "Mental Connect directory listing|411 Bedok North Avenue 2, #01-106, Singapore 460411": {
-      fees: "Not published online — confirm the current session fee with the listed practice.",
-      booking: "Use the directory listing to contact the practice before booking.",
-      hours: "Not published online — confirm when booking.",
-    },
     "Hope For Tomorrow Psychology Centre Pte Ltd|19 Lorong Kilat, #01-04, Singapore 598120": {
       fees: "Not published online — confirm the current session fee.",
       booking: "Call or WhatsApp +65 8812 4673.",
       hours: "By appointment; confirm available hours when booking.",
-    },
-    "Mental Connect directory listing|Bukit Batok West Avenue 8, Singapore 650168": {
-      fees: "Not published online — confirm the current session fee with the listed practice.",
-      booking: "Use the directory listing to contact the practice before booking.",
-      hours: "Not published online — confirm when booking.",
     },
     "Frontier Healthcare|Blk 654, Yishun Avenue 4, #01-437, Singapore 760654": {
       fees: "Initial/follow-up adult consult $125.35; student follow-up $70.85; screening $70.85 (inclusive of GST).",
