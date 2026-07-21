@@ -88,6 +88,10 @@ Local metadata for the core Codex project thread confirms that GPT-5.6-family mo
 
 The current app does not require a name, NRIC, phone number or diagnosis. Form answers and the shortlist are held only in page state and disappear when the page is refreshed or closed. External clinic and support links have their own privacy practices.
 
+## Licence
+
+This project is licensed under the [MIT License](LICENSE). Provider names, addresses and other directory details remain subject to their respective owners' rights and should be checked against the linked sources.
+
 ## Directory maintenance
 
 Provider information changes. Listings should be treated as a dated directory snapshot, checked against official clinic pages, registries and professional directories, and reconfirmed before use. The interface labels unknown or unverified information instead of estimating it.
