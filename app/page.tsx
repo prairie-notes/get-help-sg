@@ -610,7 +610,7 @@ const providers: Provider[] = [
   {
     name: "Listening Ear Counselling & Consultancy",
     kind: "therapist",
-    region: "south",
+    region: "central",
     role: "Counselling and psychotherapy practice",
     practice: "Listening Ear Counselling & Consultancy Pte Ltd",
     address: "70 Shenton Way, #21-05 EON, Singapore 079118",
@@ -622,7 +622,7 @@ const providers: Provider[] = [
   {
     name: "Therapy-Help",
     kind: "therapist",
-    region: "south",
+    region: "central",
     role: "Psychotherapy and counselling practice",
     practice: "Therapy-Help",
     address: "10 Anson Road, #28-14 International Plaza, Singapore 079903",
@@ -1047,7 +1047,7 @@ const providers: Provider[] = [
   {
     name: "Lightfull Psychology",
     kind: "therapist",
-    region: "south",
+    region: "central",
     role: "Clinical psychology practice",
     practice: "Lightfull Psychology",
     address: "101 Telok Ayer Street, #03-03, Singapore 068574",
@@ -1082,7 +1082,7 @@ const providers: Provider[] = [
   {
     name: "Mindwise Counselling & Training",
     kind: "therapist",
-    region: "south",
+    region: "central",
     role: "Counselling and psychotherapy practice",
     practice: "Mindwise Counselling & Training Pte Ltd",
     address: "10 Anson Road, #24-09 International Plaza, Singapore 079903",
@@ -1189,7 +1189,7 @@ const providers: Provider[] = [
   {
     name: "Psychology Blossom",
     kind: "therapist",
-    region: "south",
+    region: "central",
     role: "Psychology, counselling and psychotherapy clinic",
     practice: "Psychology Blossom",
     address: "150 Cecil Street, #07-02 Wing On Life Building, Singapore 069543",
@@ -1225,7 +1225,7 @@ const providers: Provider[] = [
   {
     name: "The Happy Hour Therapy Centre",
     kind: "therapist",
-    region: "south",
+    region: "central",
     role: "Psychotherapy and counselling practice",
     practice: "The Happy Hour Therapy Centre",
     address: "22 Eng Hoon Street, Singapore 169772",
