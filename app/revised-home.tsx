@@ -361,6 +361,12 @@ export default function RevisedHome({
       let score = selectedChallenges.filter((challenge) => resource.tags.includes(challenge)).length * 4;
 
       if (funding === resource.type) score += 12;
+      if (
+        funding === "subsidised" &&
+        /subsid|sliding|means-tested|income-based|affordable|charity|ncss/.test(content)
+      ) {
+        score += 30;
+      }
       if (funding === "private" && resource.type === "private") score += 12;
       if (supportGoal === "talk-now") {
         if (name.includes("national mindline")) score += 40;
@@ -388,7 +394,8 @@ export default function RevisedHome({
       return { resource, score };
     });
 
-    return scored.sort((a, b) => b.score - a.score).slice(0, 3).map(({ resource }) => resource);
+    const resultLimit = funding === "subsidised" ? 8 : 3;
+    return scored.sort((a, b) => b.score - a.score).slice(0, resultLimit).map(({ resource }) => resource);
   }, [ageGroup, allResources, careMode, funding, selectedChallenges, supportGoal]);
 
   function submitFeeling(event: FormEvent<HTMLFormElement>) {
