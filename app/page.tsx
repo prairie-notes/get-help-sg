@@ -493,18 +493,6 @@ const providers: Provider[] = [
     source: "MOE mental-health services directory",
   },
   {
-    name: "Anteh Dispensary",
-    kind: "psychiatrist",
-    region: "east",
-    role: "Private psychiatry clinic",
-    practice: "Anteh Dispensary Pte Ltd",
-    address: "368 Geylang Road, Singapore 389381",
-    phone: "+65 6744 1809",
-    description: "Private psychiatric consultations listed in the MSF accredited-practitioner snapshot.",
-    href: "https://www.msf.gov.sg/docs/default-source/opg/most_visited_cis.pdf?sfvrsn=ab15e515_29",
-    source: "MSF accredited practitioner listing",
-  },
-  {
     name: "Little Cross Family Clinic",
     kind: "psychiatrist",
     region: "east",
