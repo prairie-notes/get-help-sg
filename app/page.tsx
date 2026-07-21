@@ -1586,21 +1586,21 @@ const providerLocationGroup = (provider: Provider): string => {
 };
 
 const singaporeHelplines: Helpline[] = [
-  { name: "national mindline 1771", category: "General support", hours: "24 hours", phone: "1771 · WhatsApp 6669 1771", tel: "tel:1771" },
-  { name: "Samaritans of Singapore (SOS)", category: "General support", hours: "24 hours", phone: "1767", tel: "tel:1767" },
-  { name: "Singapore Association for Mental Health (SAMH)", category: "General support", hours: "Mon - Fri, 9am - 6pm", phone: "1800 283 7019", tel: "tel:18002837019" },
-  { name: "Touchline", category: "General support", hours: "Mon - Fri, 9am - 6pm", phone: "1800 377 2252", tel: "tel:18003772252" },
-  { name: "Youthline", category: "General support", hours: "Mon - Sat, 12pm - 9pm", phone: "6436 6612 · Text 8533 9460", tel: "tel:64366612" },
-  { name: "Community Health Assessment Team (CHAT)", category: "General support", hours: "Tue - Sat, 12pm - 9pm", phone: "6493 6500 / 6493 6501", tel: "tel:64936500" },
-  { name: "Silver Ribbon Singapore", category: "General support", hours: "Mon - Fri, 9am - 5pm", phone: "6385 3714", tel: "tel:63853714" },
-  { name: "CARE Singapore", category: "General support", hours: "Mon - Fri, 10am - 5pm", phone: "WhatsApp 6978 2728", tel: "https://wa.me/6569782728" },
-  { name: "AWARE Women’s Helpline", category: "Specialist and safety support", hours: "Mon - Fri, 10am - 6pm", phone: "1800 777 5555", tel: "tel:18007775555" },
-  { name: "We Care Addiction Hotline", category: "Specialist and safety support", hours: "Mon - Fri, 10am - 7pm", phone: "3165 8017", tel: "tel:31658017" },
-  { name: "Safe Space Child Protection", category: "Specialist and safety support", hours: "Mon - Fri, 9am - 1pm / 2pm - 6pm", phone: "6266 0171", tel: "tel:62660171" },
-  { name: "Tinkle Friend Children’s Helpline", category: "Specialist and safety support", hours: "Mon - Fri, 2.30pm - 5pm", phone: "1800 2744 788", tel: "tel:18002744788" },
-  { name: "PAVE Family Violence", category: "Specialist and safety support", hours: "Mon - Fri, 9am - 1pm / 2pm - 6pm", phone: "6555 0390", tel: "tel:65550390" },
-  { name: "National Anti-Violence and Sexual Harassment Helpline (NAVH)", category: "Specialist and safety support", hours: "24 hours", phone: "1800 777 0000", tel: "tel:18007770000" },
-  { name: "ComCare Hotline", category: "Social support", hours: "Daily, 7am - midnight", phone: "1800 222 0000", tel: "tel:18002220000" },
+  { name: "national mindline 1771", category: "General support", hours: "24 hours", phone: "1771 · WhatsApp 6669 1771", tel: "tel:1771", description: "Confidential 24/7 mental-health support by phone, WhatsApp and webchat." },
+  { name: "Samaritans of Singapore (SOS)", category: "General support", hours: "24 hours", phone: "1767", tel: "tel:1767", description: "Confidential emotional support for people feeling distressed, overwhelmed or suicidal." },
+  { name: "Singapore Association for Mental Health (SAMH)", category: "General support", hours: "Mon - Fri, 9am - 6pm", phone: "1800 283 7019", tel: "tel:18002837019", description: "Emotional support and counselling for people living with mental-health concerns." },
+  { name: "Touchline", category: "General support", hours: "Mon - Fri, 9am - 6pm", phone: "1800 377 2252", tel: "tel:18003772252", description: "A listening and support line for people who need someone to talk to." },
+  { name: "Youthline", category: "General support", hours: "Mon - Sat, 12pm - 9pm", phone: "6436 6612 · Text 8533 9460", tel: "tel:64366612", description: "Support for young people dealing with emotional, relationship or life challenges." },
+  { name: "Community Health Assessment Team (CHAT)", category: "General support", hours: "Tue - Sat, 12pm - 9pm", phone: "6493 6500 / 6493 6501", tel: "tel:64936500", description: "Mental-health assessment and support for young people, including help finding next steps." },
+  { name: "Silver Ribbon Singapore", category: "General support", hours: "Mon - Fri, 9am - 5pm", phone: "6385 3714", tel: "tel:63853714", description: "Mental-health information, emotional support and connections to relevant services." },
+  { name: "CARE Singapore", category: "General support", hours: "Mon - Fri, 10am - 5pm", phone: "WhatsApp 6978 2728", tel: "https://wa.me/6569782728", description: "Support and guidance for people experiencing emotional or mental-health difficulties." },
+  { name: "AWARE Women's Helpline", category: "Specialist and safety support", hours: "Mon - Fri, 10am - 6pm", phone: "1800 777 5555", tel: "tel:18007775555", description: "Support for women seeking help with gender-based violence, sexual assault or related concerns." },
+  { name: "We Care Addiction Hotline", category: "Specialist and safety support", hours: "Mon - Fri, 10am - 7pm", phone: "3165 8017", tel: "tel:31658017", description: "Support and guidance for people affected by alcohol or other substance use." },
+  { name: "Safe Space Child Protection", category: "Specialist and safety support", hours: "Mon - Fri, 9am - 1pm / 2pm - 6pm", phone: "6266 0171", tel: "tel:62660171", description: "Child-protection support and consultation for children and families." },
+  { name: "Tinkle Friend Children's Helpline", category: "Specialist and safety support", hours: "Mon - Fri, 2.30pm - 5pm", phone: "1800 2744 788", tel: "tel:18002744788", description: "A listening ear and support service for children who are worried or upset." },
+  { name: "PAVE Family Violence", category: "Specialist and safety support", hours: "Mon - Fri, 9am - 1pm / 2pm - 6pm", phone: "6555 0390", tel: "tel:65550390", description: "Support for people affected by family violence, including safety planning and referrals." },
+  { name: "National Anti-Violence and Sexual Harassment Helpline (NAVH)", category: "Specialist and safety support", hours: "24 hours", phone: "1800 777 0000", tel: "tel:18007770000", description: "A national helpline for violence, abuse, sexual violence and sexual-harassment concerns." },
+  { name: "ComCare Hotline", category: "Social support", hours: "Daily, 7am - midnight", phone: "1800 222 0000", tel: "tel:18002220000", description: "Social-assistance guidance for people facing financial hardship or related family needs." },
 ];
 
 const helplineDescriptions: Record<string, string> = {
