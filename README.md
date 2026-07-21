@@ -4,6 +4,18 @@ Get Help SG is a Singapore-only mental-health wayfinding website. It helps a per
 
 **Live demo:** https://get-help-sg.qzhum1996.chatgpt.site/
 
+## Judge quick start
+
+The fastest way to test Get Help SG is through the public demo above. No account, API key or test data is required.
+
+For a focused walkthrough, follow the [judging guide](JUDGING_GUIDE.md). To run the project locally:
+
+```bash
+npm install
+npm test
+npm run dev
+```
+
 ## What it does
 
 - Starts with a plain-language check-in and a guided support flow.
@@ -84,4 +96,5 @@ Provider information changes. Listings should be treated as a dated directory sn
 
 - [Submission copy](SUBMISSION.md)
 - [Under-three-minute demo script](DEMO_SCRIPT.md)
+- [Judging and smoke-test guide](JUDGING_GUIDE.md)
 - [Final submission checklist](SUBMISSION_CHECKLIST.md)

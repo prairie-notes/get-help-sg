@@ -5,11 +5,16 @@ The final video must include spoken audio, remain under three minutes and be upl
 ## Before recording
 
 - Use a clean browser window with notifications, bookmarks, personal accounts and unrelated tabs hidden.
+- Record at 1080p and test microphone clarity before the full take.
 - Record only your own voice; use no music unless you own or have documented permission for it.
+- The simplest compliant choice is to use no background music.
 - Do not open third-party websites during the recording or display third-party logos unnecessarily.
-- Confirm that any use of clinic or organisation names in the product demo complies with the hackathon’s trademark rule.
+- Keep clinic cards text-only during the demo and do not follow their external links.
+- Confirm that any use of clinic or organisation names in the product demo complies with the hackathon's trademark rule.
 - Use the verified GPT-5.6 wording below; do not add unverified model-performance claims.
+- For the Codex section, show the README collaboration section or a plain `git log --oneline -6` view; a raw thread transcript is not needed.
 - Aim for 2:35 so export or upload padding cannot push the video over three minutes.
+- After export, watch the complete file and confirm that its audio is clear and its duration is below 3:00.
 
 ## 0:00–0:18 — Problem and project
 
@@ -39,10 +44,10 @@ The final video must include spoken audio, remain under three minutes and be upl
 
 **On screen:** Briefly show the code or commit history, then return to the app.
 
-**Audio:** “I collaborated with Codex throughout the build. The core project thread ran on GPT-5.6 models, which helped turn the concept into the guided interface, implement accessibility and safety states, normalise the provider directory, add regression tests and publish the site. I made the final decisions on safety boundaries, Singapore classifications, copy and provider data. GPT-5.6 was used during development, not to process visitors’ answers at runtime.”
+**Audio:** “I collaborated with Codex throughout the build. The core project thread ran on GPT-5.6-family models, which helped turn the concept into the guided interface, implement accessibility and safety states, normalise the provider directory, add regression tests and publish the site. I made the final decisions on safety boundaries, Singapore classifications, copy and provider data. GPT-5.6 was used during development, not to process visitors' answers at runtime.”
 
 ## 2:22–2:35 — Close
 
 **On screen:** Landing page and public URL.
 
-**Audio:** “Get Help SG gives Singapore residents a calmer, clearer starting point while keeping human services and urgent support at the centre. The live demo and repository are available with this submission.”
+**Audio:** “Get Help SG gives Singapore residents a calmer, clearer starting point while keeping human services and urgent support at the centre. Links to the live demo and code repository are included in the submission.”
