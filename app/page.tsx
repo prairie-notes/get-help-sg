@@ -53,6 +53,8 @@ type Provider = {
   description: string;
   href: string;
   source: string;
+  bookingHref?: string;
+  sourceHref?: string;
 };
 
 type Clinic = Provider & {
@@ -231,6 +233,30 @@ const providers: Provider[] = [
     source: "Private Space Medical contact page",
   },
   {
+    name: "Private Space Medical",
+    kind: "therapist",
+    region: "central",
+    role: "Psychology and therapy clinic",
+    practice: "Private Space Medical",
+    address: "1 Farrer Park Station Road, #11-09 Farrer Park Medical Centre, Singapore 217562",
+    phone: "+65 6979 7886 / +65 9738 3595",
+    description: "Psychology and therapy services for children, teens and adults beside Farrer Park MRT.",
+    href: "https://privatespace.com.sg/contact-us/",
+    source: "Private Space Medical contact page",
+  },
+  {
+    name: "Private Space Medical",
+    kind: "therapist",
+    region: "central",
+    role: "Psychology and therapy clinic",
+    practice: "Private Space Medical",
+    address: "541 Orchard Road, #19-01 Liat Towers, Singapore 238881",
+    phone: "+65 8083 9857",
+    description: "Psychology and therapy services for children, teens and adults at Liat Towers.",
+    href: "https://privatespace.com.sg/contact-us/",
+    source: "Private Space Medical contact page",
+  },
+  {
     name: "Dr BL Lim",
     kind: "psychiatrist",
     region: "central",
@@ -263,8 +289,10 @@ const providers: Provider[] = [
     address: "1 Farrer Park Station Road, #10-19 Connexion, Singapore 217562",
     phone: "+65 6779 5555",
     description: "Private psychiatric consultations in the Farrer Park area.",
-    href: "https://www.msf.gov.sg/docs/default-source/opg/most_visited_cis.pdf?sfvrsn=ab15e515_20",
-    source: "MSF registered practitioner listing",
+    href: "https://www.mindcarespecialists.com/",
+    source: "Mind Care Clinic contact page",
+    bookingHref: "https://www.mindcarespecialists.com/make-an-appointment/",
+    sourceHref: "https://www.mindcarespecialists.com/make-an-appointment/",
   },
   {
     name: "Mind Care Clinic",
@@ -481,18 +509,6 @@ const providers: Provider[] = [
     source: "Psychiatric and Behavioural Medicine Clinic website",
   },
   {
-    name: "The Psychiatric and Behavioural Medicine Clinic",
-    kind: "psychiatrist",
-    region: "central",
-    role: "Psychiatry and behavioural medicine clinic",
-    practice: "The Psychiatric and Behavioural Medicine Clinic",
-    address: "1 Farrer Park Station Road, #11-16/17/18 Farrer Park Medical Centre, Singapore 217562",
-    phone: "+65 6338 3383",
-    description: "Psychiatric, psychological assessment and psychotherapy services.",
-    href: "https://ppw.sg/",
-    source: "Psychiatric and Behavioural Medicine Clinic website",
-  },
-  {
     name: "Nobel Psychological Wellness Clinic",
     kind: "psychiatrist",
     region: "north",
@@ -527,30 +543,6 @@ const providers: Provider[] = [
     description: "Outpatient addiction treatment and related mental-health support.",
     href: "https://www.thecabinsingapore.com.sg/",
     source: "MOE mental-health services directory",
-  },
-  {
-    name: "Little Cross Family Clinic",
-    kind: "psychiatrist",
-    region: "east",
-    role: "Private psychiatry clinic",
-    practice: "Little Cross Family Clinic Pte Ltd",
-    address: "929 Tampines Street 91, Singapore 520929",
-    phone: "+65 6544 0040",
-    description: "Private psychiatric consultations listed in the MSF accredited-practitioner snapshot.",
-    href: "https://www.msf.gov.sg/docs/default-source/opg/most_visited_cis.pdf?sfvrsn=ab15e515_29",
-    source: "MSF accredited practitioner listing",
-  },
-  {
-    name: "Uniq Medical Clinic (Yishun)",
-    kind: "psychiatrist",
-    region: "north",
-    role: "Private psychiatry clinic",
-    practice: "Uniq Medical Clinic (Yishun)",
-    address: "925 Yishun Central 1, #01-231, Singapore 760925",
-    phone: "+65 9022 4505",
-    description: "Private psychiatric consultations listed in the MSF accredited-practitioner snapshot.",
-    href: "https://www.msf.gov.sg/docs/default-source/opg/most_visited_cis.pdf?sfvrsn=ab15e515_29",
-    source: "MSF accredited practitioner listing",
   },
   {
     name: "Garden Grove Clinic",
@@ -712,7 +704,7 @@ const providers: Provider[] = [
     region: "central",
     role: "Psychology and counselling practice",
     practice: "Redwood Psychology Clinic",
-    address: "1 North Bridge Road, Singapore",
+    address: "1 North Bridge Road, High Street Centre #06-11, Singapore 179094",
     description: "Psychological therapy and counselling for adults and families.",
     href: "https://www.redwoodpsy.com/",
     source: "Practice website",
@@ -1301,8 +1293,8 @@ const clinicDetails = (provider: Provider): Pick<Clinic, "fees" | "booking" | "h
       hours: "Not published online — confirm when booking.",
     },
     "Mind Care Clinic|1 Farrer Park Station Road, #10-19 Connexion, Singapore 217562": {
-      fees: "$500 listed in the MSF fee snapshot; confirm the current fee and duration.",
-      booking: "Call +65 6779 5555 or use the clinic website.",
+      fees: "Not published online - confirm the current consultation and follow-up fees.",
+      booking: "Book an appointment via their website form",
       hours: "Not published online — confirm when booking.",
     },
     "Mind Care Clinic|160 Robinson Road, #05-07 SBF Center, Singapore 068914": {
@@ -1370,7 +1362,7 @@ const clinicDetails = (provider: Provider): Pick<Clinic, "fees" | "booking" | "h
       booking: "Call +65 8628 4685 or use the Psywellness website.",
       hours: "By appointment; confirm available hours when booking.",
     },
-    "Redwood Psychology Clinic|1 North Bridge Road, Singapore": {
+    "Redwood Psychology Clinic|1 North Bridge Road, High Street Centre #06-11, Singapore 179094": {
       fees: "Not published online — confirm the current session fee.",
       booking: "Use the Redwood Psychology website to enquire or book.",
       hours: "By appointment; confirm available hours when booking.",
@@ -1424,11 +1416,6 @@ const clinicDetails = (provider: Provider): Pick<Clinic, "fees" | "booking" | "h
       fees: "Not published online - confirm the current consultation fee.",
       booking: "Call +65 6737 3663 or use the clinic website.",
       hours: "Mon-Fri 9am-5pm; Sat 9am-1pm.",
-    },
-    "The Psychiatric and Behavioural Medicine Clinic|1 Farrer Park Station Road, #11-16/17/18 Farrer Park Medical Centre, Singapore 217562": {
-      fees: "Not published online - confirm the current consultation fee.",
-      booking: "Call +65 6338 3383 or use the clinic website.",
-      hours: "Clinic hours not published online - confirm when booking.",
     },
     "Holistic Psychotherapy Centre|511 Guillemard Road, #03-08 Grandlink Square, Singapore 399849": {
       fees: "Not published online - confirm the current session fee.",

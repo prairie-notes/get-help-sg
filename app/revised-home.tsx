@@ -43,6 +43,8 @@ type Provider = {
   description: string;
   href: string;
   source: string;
+  bookingHref?: string;
+  sourceHref?: string;
 };
 
 type Helpline = {
@@ -598,12 +600,23 @@ export default function RevisedHome({
           <dl className="provider-detail-list">
             <div><dt>Location</dt><dd>{clinic.address}</dd></div>
             <div><dt>Session fees</dt><dd>{clinic.fees}</dd></div>
-            <div><dt>How to book</dt><dd>{clinic.booking}</dd></div>
+            <div>
+              <dt>How to book</dt>
+              <dd>
+                {clinic.bookingHref && clinic.booking.includes("website form") ? (
+                  <>
+                    {clinic.booking.split("website form")[0]}
+                    <a href={clinic.bookingHref} target="_blank" rel="noreferrer">website form</a>
+                    {clinic.booking.split("website form")[1]}
+                  </>
+                ) : clinic.booking}
+              </dd>
+            </div>
             <div><dt>Opening hours</dt><dd>{clinic.hours}</dd></div>
             <div><dt>Verification</dt><dd>Verification date not recorded—confirm details before booking.</dd></div>
           </dl>
           <div className="provider-source-actions">
-            <a href={clinic.href} target="_blank" rel="noreferrer" aria-label={`View source for ${clinic.name}—opens in a new tab`}>Source: {clinic.source} ↗</a>
+            <a href={clinic.sourceHref ?? clinic.href} target="_blank" rel="noreferrer" aria-label={`View source for ${clinic.name}—opens in a new tab`}>Source: {clinic.source} ↗</a>
             <button type="button" onClick={() => copyCorrectionDraft(clinic)}>Copy correction note</button>
           </div>
         </details>
