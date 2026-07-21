@@ -56,6 +56,7 @@ test("contains the guided flow, safety controls, clinic tools and no starter-onl
   assert.match(revisedHome, /shortlistedIds/);
   assert.match(revisedHome, /Verification date not recorded/);
   assert.match(revisedHome, /Browse phone, text and social support/);
+  assert.doesNotMatch(revisedHome, /national mindline can help you navigate/);
   assert.match(page, /Samaritans of Singapore/);
   assert.match(page, /national mindline/);
   assert.match(page, /tel:995/);

@@ -967,7 +967,6 @@ export default function RevisedHome({
             )}
           </div>
 
-          <div className="panel-footer"><span>Not sure where to start? national mindline can help you navigate.</span><a href="tel:1771">Call 1771</a></div>
         </div>
       </section>
 
