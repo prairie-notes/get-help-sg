@@ -41,7 +41,7 @@ The core Codex project thread ran on GPT-5.6-family models. GPT-5.6 contributed 
 - **Live app:** https://get-help-sg.qzhum1996.chatgpt.site/
 - **Account required:** No
 - **Suggested test:** Enter “I’m feeling depressed,” choose therapy or medical support, select an access preference and challenges, then explore a private directory, filter clinics and compare a shortlist.
-- **Repository URL:** `TODO: add the GitHub repository URL`
+- **Repository URL:** https://github.com/prairie-notes/get-help-sg
 - **Public YouTube demo:** `TODO: add the public YouTube URL`
 - **Codex /feedback Session ID:** `TODO: type /, select /feedback from the Codex command menu in the core project thread, and paste the returned ID`
 

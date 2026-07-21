@@ -28,9 +28,9 @@ All project, documentation and deployment work that can be completed inside the 
 
 ### 2. Publish the judging repository
 
-- [ ] Create or identify the judging repository
-- [ ] Either make the repository public with an appropriate licence, or keep it private and grant access to `testing@devpost.com` and `build-week-event@openai.com`
-- [ ] Paste the repository URL into `SUBMISSION.md` and the submission form
+- [x] Create or identify the judging repository
+- [x] Make the repository public with an MIT licence
+- [x] Paste the repository URL into `SUBMISSION.md` and the submission form
 
 ### 3. Capture the Codex Session ID
 
@@ -41,7 +41,7 @@ All project, documentation and deployment work that can be completed inside the 
 ## Final links
 
 - Live app: https://get-help-sg.qzhum1996.chatgpt.site/
-- Repository: `TODO`
+- Repository: https://github.com/prairie-notes/get-help-sg
 - Public YouTube demo: `TODO`
 - Codex /feedback Session ID: `TODO`
 

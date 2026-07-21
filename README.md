@@ -4,6 +4,8 @@ Get Help SG is a Singapore-only mental-health wayfinding website. It helps a per
 
 **Live demo:** https://get-help-sg.qzhum1996.chatgpt.site/
 
+**Code repository:** https://github.com/prairie-notes/get-help-sg
+
 ## Judge quick start
 
 The fastest way to test Get Help SG is through the public demo above. No account, API key or test data is required.
