@@ -12,10 +12,10 @@
 - [x] Demo script targets less than three minutes and includes audio cues
 - [x] Category selected: **Apps for your life**
 - [x] GPT-5.6-family usage confirmed from the core Codex session metadata and documented accurately
+- [x] Project meets the published Build Week project and required developer-tool requirements
 
 ## Must be completed by the entrant
 
-- [ ] Confirm the project meets the hackathon’s separate “Project Requirements” and required developer-tool rules
 - [ ] Record the demo with clear spoken audio
 - [ ] Keep the final exported video below 3:00
 - [ ] Check every visual and audio element for third-party trademark and copyright compliance
