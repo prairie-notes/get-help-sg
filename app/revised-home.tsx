@@ -338,11 +338,6 @@ export default function RevisedHome({
     });
   }, [infoFilter, locationFilter, providerQuery, providerSort, regionClinics]);
 
-  const providerLocationGroups = useMemo(
-    () => Array.from(new Set(visibleProviders.map((provider) => provider.locationGroup))),
-    [visibleProviders],
-  );
-
   const shortlistedClinics = useMemo(
     () => shortlistedIds.map((id) => clinics.find((clinic) => clinic.id === id)).filter((clinic): clinic is Clinic => Boolean(clinic)),
     [clinics, shortlistedIds],
@@ -902,17 +897,7 @@ export default function RevisedHome({
                     )}
 
                     {visibleProviders.length > 0 ? (
-                      <div className="provider-location-groups">
-                        {providerLocationGroups.map((locationGroup) => {
-                          const locationProviders = visibleProviders.filter((provider) => provider.locationGroup === locationGroup);
-                          return (
-                            <section className="provider-location-group" key={locationGroup}>
-                              <div className="provider-location-heading"><h3>{locationGroup}</h3><span>{locationProviders.length} {locationProviders.length === 1 ? "clinic" : "clinics"}</span></div>
-                              <div className="provider-list">{locationProviders.map(renderClinicCard)}</div>
-                            </section>
-                          );
-                        })}
-                      </div>
+                      <div className="provider-list">{visibleProviders.map(renderClinicCard)}</div>
                     ) : (
                       <div className="provider-empty"><strong>No clinic matches these filters.</strong><p>Clear a filter, choose another region, or consider online support.</p><button type="button" className="clear-filters" onClick={resetProviderFilters}>Clear filters</button></div>
                     )}
