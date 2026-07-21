@@ -63,8 +63,14 @@ test("contains the guided flow, safety controls, clinic tools and no starter-onl
   assert.doesNotMatch(page, /address: "Eunos \/ East Singapore"/);
   assert.doesNotMatch(page, /practice: "Intellect Company Pte Ltd"/);
   assert.doesNotMatch(page, /practice: "Mental Connect directory listing"/);
+  assert.equal((page.match(/practice: "Garden Grove Clinic"/g) ?? []).length, 2);
+  assert.match(page, /Mount Alvernia Medical Centre A, 820 Thomson Rd, #02-05, Singapore 574623/);
+  assert.match(page, /href: "https:\/\/gardengroveclinic\.sg\/"/);
+  assert.match(page, /Call \+65 6513 5233 or send a WhatsApp text to \+65 8089 5233 to arrange an appointment\./);
+  assert.match(page, /return "Mount Alvernia \/ Thomson"/);
   assert.doesNotMatch(page, /practice: "Psywellness",/);
   assert.match(page, /practice: "Psywellness Testing & Therapy Centre"/);
+  assert.match(page, /address: "160 Robinson Road, #05-07 SBF Center, Singapore 068914"/);
   assert.match(page, /Blk 654, Yishun Avenue 4, #01-437, Singapore 760654/);
   assert.match(page, /3151 Commonwealth Avenue West, #04-01 Grantral Mall, Singapore 129581/);
   assert.doesNotMatch(page, /address: "Frontier (?:Medical Associates, Yishun|Family Medicine Clinic, Clementi)"/);

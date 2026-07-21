@@ -267,6 +267,30 @@ const providers: Provider[] = [
     source: "MSF registered practitioner listing",
   },
   {
+    name: "Mind Care Clinic",
+    kind: "psychiatrist",
+    region: "central",
+    role: "Psychiatry practice",
+    practice: "Mind Care Clinic",
+    address: "160 Robinson Road, #05-07 SBF Center, Singapore 068914",
+    phone: "+65 6908 0810",
+    description: "Private psychiatric consultations at Mind Care Clinic's SBF Center outlet.",
+    href: "https://www.mindcarespecialists.com/mind-care-clinic-sbf/",
+    source: "Mind Care Clinic SBF contact page",
+  },
+  {
+    name: "Mind Care Clinic",
+    kind: "therapist",
+    region: "central",
+    role: "Psychology and therapy clinic",
+    practice: "Mind Care Clinic",
+    address: "160 Robinson Road, #05-07 SBF Center, Singapore 068914",
+    phone: "+65 6908 0810",
+    description: "Clinical psychology, therapy and counselling services at Mind Care Clinic's SBF Center outlet.",
+    href: "https://www.mindcarespecialists.com/mind-care-clinic-sbf/",
+    source: "Mind Care Clinic SBF services page",
+  },
+  {
     name: "Neuropsychiatry Associates",
     kind: "psychiatrist",
     region: "central",
@@ -537,7 +561,19 @@ const providers: Provider[] = [
     address: "430 Joo Chiat Road, Singapore 427646",
     phone: "+65 6513 5233",
     description: "Private psychiatric consultations in the Joo Chiat area.",
-    href: "https://www.msf.gov.sg/docs/default-source/opg/most_visited_cis.pdf?sfvrsn=ab15e515_20",
+    href: "https://gardengroveclinic.sg/",
+    source: "MSF registered practitioner listing",
+  },
+  {
+    name: "Garden Grove Clinic",
+    kind: "psychiatrist",
+    region: "central",
+    role: "Psychiatry practice",
+    practice: "Garden Grove Clinic",
+    address: "Mount Alvernia Medical Centre A, 820 Thomson Rd, #02-05, Singapore 574623",
+    phone: "+65 6513 5233",
+    description: "Private psychiatric consultations at Mount Alvernia Medical Centre.",
+    href: "https://gardengroveclinic.sg/",
     source: "MSF registered practitioner listing",
   },
   {
@@ -1269,6 +1305,11 @@ const clinicDetails = (provider: Provider): Pick<Clinic, "fees" | "booking" | "h
       booking: "Call +65 6779 5555 or use the clinic website.",
       hours: "Not published online — confirm when booking.",
     },
+    "Mind Care Clinic|160 Robinson Road, #05-07 SBF Center, Singapore 068914": {
+      fees: "Not published online - confirm the current consultation and follow-up fees.",
+      booking: "Call +65 6908 0810 or book through the Mind Care Clinic appointment form.",
+      hours: "Mon-Fri 9am-5:30pm; Sat 9am-12:30pm by appointment; Sun/public holidays closed.",
+    },
     "Neuropsychiatry Associates|3 Mount Elizabeth, #04-16 Mount Elizabeth Medical Centre, Singapore 228510": {
       fees: "$600–$1,000 listed in the MSF fee snapshot; confirm the current fee.",
       booking: "Call +65 6970 7930 to arrange an appointment.",
@@ -1291,7 +1332,12 @@ const clinicDetails = (provider: Provider): Pick<Clinic, "fees" | "booking" | "h
     },
     "Garden Grove Clinic|430 Joo Chiat Road, Singapore 427646": {
       fees: "$300 and above listed in the MSF fee snapshot; confirm the current fee.",
-      booking: "Call +65 6513 5233 to arrange an appointment.",
+      booking: "Call +65 6513 5233 or send a WhatsApp text to +65 8089 5233 to arrange an appointment.",
+      hours: "Not published online — confirm when booking.",
+    },
+    "Garden Grove Clinic|Mount Alvernia Medical Centre A, 820 Thomson Rd, #02-05, Singapore 574623": {
+      fees: "$300 and above listed in the MSF fee snapshot; confirm the current fee.",
+      booking: "Call +65 6513 5233 or send a WhatsApp text to +65 8089 5233 to arrange an appointment.",
       hours: "Not published online — confirm when booking.",
     },
     "LER Clinic & Surgery|835 Tampines Street 83, Singapore 520835": {
@@ -1539,6 +1585,7 @@ const providerLocationGroup = (provider: Provider): string => {
   if (/novena|sinaran|irrawaddy|329563|307506|307470/.test(location)) return "Novena";
   if (/farrer park|race course|217562/.test(location)) return "Farrer Park";
   if (/mount elizabeth|228510/.test(location)) return "Mount Elizabeth";
+  if (/mount alvernia|thomson rd|574623/.test(location)) return "Mount Alvernia / Thomson";
   if (/napier|gleneagles|tanglin|258499|247909/.test(location)) return "Tanglin / Gleneagles";
   if (/orchard|grange|camden|somerset|lucky plaza|238881|238863|249615|238164/.test(location)) return "Orchard / Somerset";
   if (/coleman|adelphi|north bridge|cuppage|kramat|bishan|179803|179098|229469|228773|570116/.test(location)) return "City Hall / Central";
