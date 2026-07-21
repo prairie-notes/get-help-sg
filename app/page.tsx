@@ -89,8 +89,8 @@ const regions: Array<[Region, string, string]> = [
   ["north", "North Singapore", "Woodlands · Yishun · Ang Mo Kio"],
   ["south", "South Singapore", "HarbourFront · Tanjong Pagar · Queenstown"],
   ["east", "East Singapore", "Katong · Bedok · Tampines"],
-  ["west", "West Singapore", "Bukit Timah · Jurong · Clementi"],
-  ["central", "Central Singapore", "Orchard · Bugis · Novena · City"],
+  ["west", "West Singapore", "Jurong · Clementi · Bukit Batok"],
+  ["central", "Central Singapore", "Orchard · Bukit Timah · Novena · City"],
 ];
 
 const providers: Provider[] = [
@@ -785,7 +785,7 @@ const providers: Provider[] = [
   {
     name: "Hope For Tomorrow Psychology Centre",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Psychology and counselling practice",
     practice: "Hope For Tomorrow Psychology Centre Pte Ltd",
     address: "19 Lorong Kilat, #01-04, Singapore 598120",
@@ -868,7 +868,7 @@ const providers: Provider[] = [
   {
     name: "Karin Goh",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Child & Adolescent Clinical Psychologist",
     practice: "The Center for Psychology",
     address: "1 Fifth Avenue, #02-03 Guthrie House, Singapore 268802",
@@ -880,7 +880,7 @@ const providers: Provider[] = [
   {
     name: "Dr Jessie Koh",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Registered Clinical Psychologist",
     practice: "The Center for Psychology",
     address: "1 Fifth Avenue, #02-03 Guthrie House, Singapore 268802",
@@ -892,7 +892,7 @@ const providers: Provider[] = [
   {
     name: "Dr Janice Lee",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Registered Clinical Psychologist",
     practice: "The Center for Psychology",
     address: "1 Fifth Avenue, #02-03 Guthrie House, Singapore 268802",
@@ -904,7 +904,7 @@ const providers: Provider[] = [
   {
     name: "Thivya Lakshmi",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Clinical Psychologist",
     practice: "The Center for Psychology",
     address: "1 Fifth Avenue, #02-03 Guthrie House, Singapore 268802",
@@ -916,7 +916,7 @@ const providers: Provider[] = [
   {
     name: "Leanne Wong",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Child & Adolescent Counsellor",
     practice: "The Center for Psychology",
     address: "1 Fifth Avenue, #02-03 Guthrie House, Singapore 268802",
@@ -928,7 +928,7 @@ const providers: Provider[] = [
   {
     name: "Soak Mun Lee",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Registered Clinical Psychologist",
     practice: "The Center for Psychology",
     address: "1 Fifth Avenue, #02-03 Guthrie House, Singapore 268802",
@@ -940,7 +940,7 @@ const providers: Provider[] = [
   {
     name: "Angeline Kin",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Registered Art Psychotherapist & Counsellor",
     practice: "The Center for Psychology",
     address: "1 Fifth Avenue, #02-03 Guthrie House, Singapore 268802",
@@ -952,7 +952,7 @@ const providers: Provider[] = [
   {
     name: "Sylvia Sivanesan",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Relationship & Family Counsellor",
     practice: "The Center for Psychology",
     address: "1 Fifth Avenue, #02-03 Guthrie House, Singapore 268802",
@@ -1024,7 +1024,7 @@ const providers: Provider[] = [
   {
     name: "INEZ Psychological Well Being Clinic",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Psychology and counselling clinic",
     practice: "INEZ Psychological Well Being Clinic",
     address: "733 Bukit Timah Road, #01-03 Second Avenue Junction, Singapore 269748",
@@ -1178,7 +1178,7 @@ const providers: Provider[] = [
   {
     name: "Alliance Counselling",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Multilingual counselling and psychology practice",
     practice: "Alliance Counselling",
     address: "501 Bukit Timah Road, #04-03 & #03-02 Cluny Court, Singapore 259760",
@@ -1213,7 +1213,7 @@ const providers: Provider[] = [
   {
     name: "Link & Relate",
     kind: "therapist",
-    region: "west",
+    region: "central",
     role: "Psychological practice for adolescents and adults",
     practice: "Link & Relate Pte Ltd",
     address: "733 Bukit Timah Road, #01-06 Second Avenue Junction, Singapore 269748",
@@ -1666,7 +1666,8 @@ const providerLocationGroup = (provider: Provider): string => {
   if (/shenton|anson|marina one|079118|079903|018935/.test(location)) return "Tanjong Pagar / Marina Bay";
   if (/guillemard|geylang|tampines|joo chiat|katong|bedok|tembeling|399849|389381|520929|427646|423731|460411|437844/.test(location)) return "East Singapore";
   if (/yishun|woodlands|ang mo kio|bidadari|woodleigh|760925|560452|367803/.test(location)) return "North Singapore";
-  if (/clementi|bukit batok|bukit timah|jurong|598120|650168|268802/.test(location)) return "West Singapore";
+  if (/bukit timah|lorong kilat|fifth avenue|cluny court|598120|268802|269748|259760/.test(location)) return "Bukit Timah";
+  if (/clementi|bukit batok|jurong|650168/.test(location)) return "West Singapore";
 
   return regionLabels[provider.region];
 };

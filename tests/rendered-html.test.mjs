@@ -59,6 +59,9 @@ test("contains the guided flow, safety controls, clinic tools and no starter-onl
   assert.doesNotMatch(revisedHome, /national mindline can help you navigate/);
   assert.match(page, /Samaritans of Singapore/);
   assert.match(page, /national mindline/);
+  assert.match(page, /\["central", "Central Singapore", "Orchard · Bukit Timah · Novena · City"\]/);
+  assert.match(page, /return "Bukit Timah"/);
+  assert.doesNotMatch(page, /region: "west",[\s\S]{0,240}address: "[^"]*(?:Bukit Timah|Fifth Avenue|Lorong Kilat|Cluny Court)/i);
   assert.match(page, /tel:995/);
   assert.match(page, /tel:999/);
   assert.match(layout, /get help \/ sg — Find mental health support/);
