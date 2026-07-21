@@ -529,18 +529,6 @@ const providers: Provider[] = [
     source: "MSF registered practitioner listing",
   },
   {
-    name: "LER Clinic & Surgery",
-    kind: "psychiatrist",
-    region: "east",
-    role: "Psychiatry practice",
-    practice: "LER Clinic & Surgery",
-    address: "835 Tampines Street 83, Singapore 520835",
-    phone: "+65 6788 6279",
-    description: "Private psychiatric consultations in Tampines.",
-    href: "https://www.msf.gov.sg/docs/default-source/opg/most_visited_cis.pdf?sfvrsn=ab15e515_20",
-    source: "MSF registered practitioner listing",
-  },
-  {
     name: "Singapore Counselling Centre",
     kind: "therapist",
     region: "central",
