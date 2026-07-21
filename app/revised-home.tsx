@@ -747,6 +747,32 @@ export default function RevisedHome({
                     </button>
                   ))}
                 </div>
+                <aside className="professional-guide" aria-labelledby="professional-guide-title">
+                  <div className="professional-guide-heading">
+                    <div>
+                      <p className="eyebrow">A quick guide</p>
+                      <h3 id="professional-guide-title">Therapist or psychiatrist?</h3>
+                    </div>
+                    <span className="guide-mark" aria-hidden="true">?</span>
+                  </div>
+                  <p className="professional-guide-intro">Both can support your mental health. The main difference is whether you are looking for talk-based care, medical assessment, or both.</p>
+                  <div className="professional-guide-grid">
+                    <article className="professional-guide-card">
+                      <p className="professional-guide-label">Therapist</p>
+                      <h4>Counsellor, psychologist or psychotherapist</h4>
+                      <p>Provides talk-based support to help you understand what you are going through, build coping skills and work through concerns.</p>
+                      <p><strong>Consider this when:</strong> you want regular conversations about stress, anxiety, relationships, grief, trauma or difficult life situations.</p>
+                    </article>
+                    <article className="professional-guide-card">
+                      <p className="professional-guide-label">Psychiatrist</p>
+                      <h4>Medical doctor specialising in mental health</h4>
+                      <p>Can assess mental health conditions, consider medication, monitor treatment and coordinate therapy or other care.</p>
+                      <p><strong>Consider this when:</strong> symptoms are severe, persistent, disrupting daily life, or you want medical assessment or medication advice.</p>
+                    </article>
+                  </div>
+                  <p className="professional-guide-note"><strong>Not sure where to start?</strong> That is okay. A GP, therapist or national mindline 1771 can help you work out the next step. If you may be in immediate danger, call 995 or 999.</p>
+                  <a className="professional-guide-link" href="https://www.healthhub.sg/programmes/mindsg/seeking-support" target="_blank" rel="noreferrer">Learn more about mental health professionals <span>→</span></a>
+                </aside>
               </section>
             )}
 
