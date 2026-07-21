@@ -1,0 +1,41 @@
+# Final submission checklist
+
+## Project
+
+- [x] Working project built and publicly deployed
+- [x] Public demo requires no test account
+- [x] Product description prepared
+- [x] Features and functionality documented
+- [x] Local installation and testing instructions documented
+- [x] Supported platforms documented
+- [x] Codex collaboration and human decisions documented in the README
+- [x] Demo script targets less than three minutes and includes audio cues
+- [x] Category selected: **Apps for your life**
+
+## Must be completed by the entrant
+
+- [ ] Confirm the project meets the hackathon’s separate “Project Requirements” and required developer-tool rules
+- [ ] Confirm and document how GPT-5.6 was actually used
+- [ ] Record the demo with clear spoken audio
+- [ ] Keep the final exported video below 3:00
+- [ ] Check every visual and audio element for third-party trademark and copyright compliance
+- [ ] Upload the video to YouTube and set visibility to **Public**
+- [ ] Paste the public YouTube URL into `SUBMISSION.md` and the submission form
+- [ ] Create or identify the judging repository
+- [ ] Either make the repository public with an appropriate licence, or keep it private and grant access to `testing@devpost.com` and `build-week-event@openai.com`
+- [ ] Paste the repository URL into `SUBMISSION.md` and the submission form
+- [ ] In the core Codex thread, type `/`, select `/feedback` from the command menu (do not send it as an ordinary message), and copy the displayed Session ID
+- [ ] Paste the returned Codex Session ID into `SUBMISSION.md` and the submission form
+- [ ] Remove every remaining `TODO` before submitting
+
+## Final links
+
+- Live app: https://get-help-sg.qzhum1996.chatgpt.site/
+- Repository: `TODO`
+- Public YouTube demo: `TODO`
+- Codex /feedback Session ID: `TODO`
+
+## Official references
+
+- Challenge requirements and tracks: https://openai.devpost.com/
+- Official `/feedback` Session ID clarification: https://openai.devpost.com/forum_topics/44463-question-about-feedback-session-id-for-chatgpt-users
