@@ -59,6 +59,9 @@ test("contains the guided flow, safety controls, clinic tools and no starter-onl
   assert.doesNotMatch(revisedHome, /national mindline can help you navigate/);
   assert.match(page, /Samaritans of Singapore/);
   assert.match(page, /national mindline/);
+  assert.match(page, /Blk 654, Yishun Avenue 4, #01-437, Singapore 760654/);
+  assert.match(page, /3151 Commonwealth Avenue West, #04-01 Grantral Mall, Singapore 129581/);
+  assert.doesNotMatch(page, /address: "Frontier (?:Medical Associates, Yishun|Family Medicine Clinic, Clementi)"/);
   assert.match(page, /\["central", "Central Singapore", "Orchard · Bukit Timah · Novena · City"\]/);
   assert.match(page, /return "Bukit Timah"/);
   assert.doesNotMatch(page, /region: "west",[\s\S]{0,240}address: "[^"]*(?:Bukit Timah|Fifth Avenue|Lorong Kilat|Cluny Court)/i);
