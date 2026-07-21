@@ -683,17 +683,6 @@ const providers: Provider[] = [
     source: "Raffles Medical Group contact page",
   },
   {
-    name: "Psywellness Testing & Therapy Centre",
-    kind: "therapist",
-    region: "central",
-    role: "Psychology and counselling practice",
-    practice: "Psywellness",
-    address: "1 North Bridge Road, Singapore",
-    description: "Counselling, psychotherapy and psychological testing services.",
-    href: "https://www.psywellness.org/",
-    source: "Practice website",
-  },
-  {
     name: "Redwood Psychology",
     kind: "therapist",
     region: "central",
