@@ -22,6 +22,8 @@ For people seeking private care, Get Help SG includes separate psychiatry and ps
 
 Codex accelerated product design, implementation, directory normalisation, testing and deployment. The project owner directed the safety boundaries, Singapore-only taxonomy, region classifications, content standards and provider corrections.
 
+The core Codex project thread ran on GPT-5.6-family models. GPT-5.6 contributed product reasoning, code generation, UX and safety-copy iteration, provider-data normalisation, regression tests and release validation. It was used during development rather than at runtime, so visitors’ mental-health answers are not sent to an OpenAI API.
+
 ## Features to highlight
 
 - Guided, non-diagnostic support triage
@@ -43,6 +45,6 @@ Codex accelerated product design, implementation, directory normalisation, testi
 - **Public YouTube demo:** `TODO: add the public YouTube URL`
 - **Codex /feedback Session ID:** `TODO: type /, select /feedback from the Codex command menu in the core project thread, and paste the returned ID`
 
-## Required model statement
+## GPT-5.6 model statement
 
-`TODO: Confirm the actual GPT-5.6 usage, then add one factual sentence explaining what it contributed. Do not submit an unverified model claim.`
+Local Codex session metadata confirms GPT-5.6-family model usage throughout the core project thread. The `/feedback` Session ID supplied with the submission is the judge-facing reference for that thread.

@@ -68,9 +68,9 @@ Codex was the implementation partner throughout the project. It accelerated:
 
 The human–Codex collaboration was deliberately hands-on. The project owner made the key product and editorial decisions: Singapore-only scope, non-diagnostic positioning, public/private/free care pathways, region definitions, clinic-level rather than clinician-level listings, required listing fields and individual provider corrections. Codex translated those decisions into code, highlighted inconsistencies, preserved changes across iterations and verified each release.
 
-### GPT-5.6 disclosure to complete before submission
+### How GPT-5.6 contributed
 
-The hackathon requires an accurate explanation of how GPT-5.6 contributed. Before submitting, confirm the model shown for the core Codex session and replace this paragraph with a factual account of the GPT-5.6 work. Do not state that GPT-5.6 was used unless the session or another documented project workflow actually used it. The repository currently has no runtime OpenAI API integration.
+Local metadata for the core Codex project thread confirms that GPT-5.6-family models powered the work across the session. GPT-5.6 contributed to product reasoning, code generation, UX and safety-copy iteration, provider-data normalisation, regression-test design and release validation. The model was used as a development collaborator through Codex, not as a runtime mental-health decision-maker: the deployed site does not send a visitor’s answers to an OpenAI API.
 
 ## Privacy
 
@@ -85,4 +85,3 @@ Provider information changes. Listings should be treated as a dated directory sn
 - [Submission copy](SUBMISSION.md)
 - [Under-three-minute demo script](DEMO_SCRIPT.md)
 - [Final submission checklist](SUBMISSION_CHECKLIST.md)
-

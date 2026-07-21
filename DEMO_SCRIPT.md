@@ -8,7 +8,7 @@ The final video must include spoken audio, remain under three minutes and be upl
 - Record only your own voice; use no music unless you own or have documented permission for it.
 - Do not open third-party websites during the recording or display third-party logos unnecessarily.
 - Confirm that any use of clinic or organisation names in the product demo complies with the hackathon’s trademark rule.
-- Confirm the actual model used before saying “GPT-5.6.”
+- Use the verified GPT-5.6 wording below; do not add unverified model-performance claims.
 - Aim for 2:35 so export or upload padding cannot push the video over three minutes.
 
 ## 0:00–0:18 — Problem and project
@@ -39,11 +39,10 @@ The final video must include spoken audio, remain under three minutes and be upl
 
 **On screen:** Briefly show the code or commit history, then return to the app.
 
-**Audio template:** “I collaborated with Codex throughout the build. It helped turn the product concept into the guided interface, implement accessibility and safety states, normalise the provider directory, add regression tests and publish the site. [Insert a truthful, specific sentence about work actually completed with GPT-5.6 after confirming the model or documented workflow.] I made the final product decisions on safety boundaries, Singapore classifications, copy and provider data.”
+**Audio:** “I collaborated with Codex throughout the build. The core project thread ran on GPT-5.6 models, which helped turn the concept into the guided interface, implement accessibility and safety states, normalise the provider directory, add regression tests and publish the site. I made the final decisions on safety boundaries, Singapore classifications, copy and provider data. GPT-5.6 was used during development, not to process visitors’ answers at runtime.”
 
 ## 2:22–2:35 — Close
 
 **On screen:** Landing page and public URL.
 
 **Audio:** “Get Help SG gives Singapore residents a calmer, clearer starting point while keeping human services and urgent support at the centre. The live demo and repository are available with this submission.”
-
