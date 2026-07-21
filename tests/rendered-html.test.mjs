@@ -27,6 +27,7 @@ test("server-renders the Get Help SG landing page", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+  assert.equal(response.headers.get("cache-control"), "public, max-age=0, must-revalidate");
 
   const html = await response.text();
   assert.match(html, /<title>get help \/ sg — Find mental health support<\/title>/i);
