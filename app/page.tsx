@@ -421,6 +421,18 @@ const providers: Provider[] = [
     source: "Adelphi Psych Medicine Clinic contact page",
   },
   {
+    name: "Adelphi Psych Medicine Clinic",
+    kind: "therapist",
+    region: "central",
+    role: "Psychology and psychotherapy clinic",
+    practice: "Adelphi Psych Medicine Clinic",
+    address: "1 Coleman Street, The Adelphi, #04-32, Singapore 179803",
+    phone: "+65 6250 9833",
+    description: "Psychotherapy and psychology services, including CBT and EMDR, alongside psychiatric care.",
+    href: "https://adelphipsych.sg/services/",
+    source: "Adelphi Psych Medicine Clinic services page",
+  },
+  {
     name: "Famille Psychiatry Associates",
     kind: "psychiatrist",
     region: "central",
