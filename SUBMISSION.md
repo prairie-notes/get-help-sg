@@ -6,7 +6,7 @@ Get Help SG
 
 ## Category
 
-**Apps for your life** — the track explicitly includes consumer health and everyday-life applications.
+**Apps for Your Life** — the track explicitly includes consumer health and everyday-life applications.
 
 ## One-line summary
 
@@ -38,12 +38,12 @@ The core Codex project thread ran on GPT-5.6-family models. GPT-5.6 contributed 
 
 ## Judging and testing
 
-- **Live app:** https://get-help-sg.qzhum1996.chatgpt.site/
+- **Live app:** https://get-help-sg.vercel.app
 - **Account required:** No
 - **Suggested test:** Enter “I’m feeling depressed,” choose therapy or medical support, select an access preference and challenges, then explore a private directory, filter clinics and compare a shortlist.
 - **Repository URL:** https://github.com/prairie-notes/get-help-sg
-- **Public YouTube demo:** `TODO: add the public YouTube URL`
-- **Codex /feedback Session ID:** `TODO: type /, select /feedback from the Codex command menu in the core project thread, and paste the returned ID`
+- **Public YouTube demo:** https://youtu.be/fXTdKh0Qdio
+- **Codex /feedback Session ID:** `019f7fc6-ed06-7383-b07c-ebca883361ea`
 
 ## GPT-5.6 model statement
 

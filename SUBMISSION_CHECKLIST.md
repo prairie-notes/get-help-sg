@@ -12,7 +12,7 @@ All project, documentation and deployment work that can be completed inside the 
 - [x] Supported platforms documented
 - [x] Codex collaboration and human decisions documented in the README
 - [x] Demo script targets less than three minutes and includes audio cues
-- [x] Category selected: **Apps for your life**
+- [x] Category selected: **Apps for Your Life**
 - [x] GPT-5.6-family usage confirmed from the core Codex session metadata and documented accurately
 - [x] Project meets the published Build Week project and required developer-tool requirements
 
@@ -20,11 +20,11 @@ All project, documentation and deployment work that can be completed inside the 
 
 ### 1. Record and publish the video
 
-- [ ] Record the demo with clear spoken audio
-- [ ] Keep the final exported video below 3:00
-- [ ] Check every visual and audio element for third-party trademark and copyright compliance
-- [ ] Upload the video to YouTube and set visibility to **Public**
-- [ ] Paste the public YouTube URL into `SUBMISSION.md` and the submission form
+- [x] Record the demo with clear spoken audio
+- [x] Keep the final exported video below 3:00
+- [x] Check every visual and audio element for third-party trademark and copyright compliance
+- [x] Upload the video to YouTube and set visibility to **Public**
+- [x] Paste the public YouTube URL into `SUBMISSION.md` and the submission form
 
 ### 2. Publish the judging repository
 
@@ -34,16 +34,17 @@ All project, documentation and deployment work that can be completed inside the 
 
 ### 3. Capture the Codex Session ID
 
-- [ ] In the core Codex thread, type `/`, select `/feedback` from the command menu (do not send it as an ordinary message), and copy the displayed Session ID
-- [ ] Paste the returned Codex Session ID into `SUBMISSION.md` and the submission form
-- [ ] Remove every remaining `TODO` before submitting
+- [x] In the core Codex thread, type `/`, select `/feedback` from the command menu (do not send it as an ordinary message), and copy the displayed Session ID
+- [x] Paste the returned Codex Session ID into `SUBMISSION.md`
+- [x] Paste the returned Codex Session ID into the submission form
+- [x] Remove every remaining `TODO` before submitting
 
 ## Final links
 
-- Live app: https://get-help-sg.qzhum1996.chatgpt.site/
+- Live app: https://get-help-sg.vercel.app
 - Repository: https://github.com/prairie-notes/get-help-sg
-- Public YouTube demo: `TODO`
-- Codex /feedback Session ID: `TODO`
+- Public YouTube demo: https://youtu.be/fXTdKh0Qdio
+- Codex /feedback Session ID: `019f7fc6-ed06-7383-b07c-ebca883361ea`
 
 ## Official references
 
