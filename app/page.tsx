@@ -722,7 +722,7 @@ const providers: Provider[] = [
     region: "east",
     role: "Counselling and therapy practice",
     practice: "LightingWay",
-    address: "Eunos / East Singapore",
+    address: "Centropod@Changi, 80 Changi Road, #02-07, Singapore 419715",
     description: "Professional counselling and therapy based in the East.",
     href: "https://www.lightingwaytherapy.com.sg/location",
     source: "Practice location page",
@@ -1379,7 +1379,7 @@ const clinicDetails = (provider: Provider): Pick<Clinic, "fees" | "booking" | "h
       booking: "Call or WhatsApp +65 8809 0920.",
       hours: "By appointment; confirm available hours when booking.",
     },
-    "LightingWay|Eunos / East Singapore": {
+    "LightingWay|Centropod@Changi, 80 Changi Road, #02-07, Singapore 419715": {
       fees: "Not published online — confirm the current session fee.",
       booking: "Use the LightingWay location page to enquire or book.",
       hours: "By appointment; confirm available hours when booking.",
